@@ -1,0 +1,44 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: customer-auth
+  labels:
+    app: customer-auth
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: customer-auth
+  template:
+    metadata:
+      labels:
+        app: customer-auth
+    spec:
+      containers:
+        - name: customer-auth
+          image: ghcr.io/julien-jungo/martian-bank-demo-customer-auth
+          env:
+            {{- if not .Values.mongodb.enabled }}
+            - name: DATABASE_HOST
+              value: "root:example@mongodb"
+            {{- end }}
+            - name: NODE_ENV
+              value: production
+            - name: PORT
+              value: "8000"
+          envFrom:
+            - configMapRef:
+                name: configmap-martianbank
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: customer-auth
+spec:
+  selector:
+    app: customer-auth
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000

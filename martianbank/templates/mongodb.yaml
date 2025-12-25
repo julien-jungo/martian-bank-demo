@@ -30,21 +30,18 @@ spec:
       - name: mo-data
         persistentVolumeClaim:
           claimName: mo-data-pvc
-      restartPolicy: Always             
-
-# Mongo DB service
+      restartPolicy: Always
 ---
 apiVersion: v1
 kind: Service
 metadata:
-    name: mongodb
+  name: mongodb
 spec:
-    type: ClusterIP
-    selector:
-        app: mongodb
-    ports:
-        - protocol: TCP
-          port: 27017
-          targetPort: 27017
+  type: ClusterIP
+  selector:
+    app: mongodb
+  ports:
+    - protocol: TCP
+      port: 27017
+      targetPort: 27017
 {{ end -}}
-

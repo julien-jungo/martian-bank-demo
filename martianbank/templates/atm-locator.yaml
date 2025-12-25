@@ -1,0 +1,44 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: atm-locator
+  labels:
+    app: atm-locator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: atm-locator
+  template:
+    metadata:
+      labels:
+        app: atm-locator
+    spec:
+      containers:
+        - name: atm-locator
+          image: ghcr.io/julien-jungo/martian-bank-demo-atm-locator
+          env:
+            {{- if not .Values.mongodb.enabled }}
+            - name: DATABASE_HOST
+              value: "root:example@mongodb"
+            {{- end }}
+            - name: NODE_ENV
+              value: production
+            - name: PORT
+              value: "8001"
+          envFrom:
+            - configMapRef:
+                name: configmap-martianbank
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: atm-locator
+spec:
+  selector:
+    app: atm-locator
+  ports:
+    - protocol: TCP
+      port: 8001
+      targetPort: 8001
