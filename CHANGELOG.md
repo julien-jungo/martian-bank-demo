@@ -2,6 +2,22 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 1.20.0 - 2025-12-27
+### Package updates
+- atm-locator bumped to atm-locator-1.3.0
+- loan bumped to loan-1.3.0
+- transactions bumped to transactions-1.3.0
+- accounts bumped to accounts-1.3.0
+- dashboard bumped to dashboard-1.3.0
+- customer-auth bumped to customer-auth-1.3.0
+- ui bumped to ui-1.3.0
+- locust bumped to locust-1.3.0
+### Global changes
+#### Continuous Integration
+- fetch release commit SHA - (0cbfdd9) - julien-jungo
+
+- - -
+
 ## 1.19.0 - 2025-12-27
 ### Package updates
 - atm-locator bumped to atm-locator-1.2.0

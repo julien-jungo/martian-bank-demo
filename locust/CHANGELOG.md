@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## locust-1.3.0 - 2025-12-27
+#### Features
+- test releasing - (4d1ab7f) - julien-jungo
+
+- - -
+
 ## locust-1.2.0 - 2025-12-27
 #### Features
 - test releasing - (4186be6) - julien-jungo
