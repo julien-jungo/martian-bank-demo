@@ -2,6 +2,20 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 1.23.0 - 2025-12-27
+### Package updates
+- nginx bumped to nginx-0.1.0
+### Global changes
+#### Continuous Integration
+- add nginx to cog.toml - (c67be05) - julien-jungo
+- update image tags in k8s manifests upon release - (65d0ed4) - julien-jungo
+#### Miscellaneous Chores
+- (**version**) nginx-1.0.0 - (1626b47) - julien-jungo
+- rename k8s manifest for loan - (815fd58) - julien-jungo
+- use version tags in k8s manifests - (e5e7840) - julien-jungo
+
+- - -
+
 ## 1.22.0 - 2025-12-27
 ### Package updates
 - accounts bumped to accounts-1.5.0

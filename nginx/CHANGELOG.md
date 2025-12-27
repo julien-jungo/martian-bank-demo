@@ -2,6 +2,16 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## nginx-0.1.0 - 2025-12-27
+#### Features
+- test releasing - (cb2d683) - julien-jungo
+#### Continuous Integration
+- add nginx to cog.toml - (c67be05) - julien-jungo
+#### Miscellaneous Chores
+- (**version**) nginx-1.0.0 - (1626b47) - julien-jungo
+
+- - -
+
 ## nginx-1.0.0 - 2025-12-27
 #### Continuous Integration
 - add nginx to cog.toml - (c67be05) - julien-jungo
