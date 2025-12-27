@@ -77,9 +77,13 @@ jobs:
       - name: Check Version
         id: check
         run: |
+          echo "INFO: Present git tags: \"$(git tag --points-at HEAD)\""
           if git tag --points-at HEAD | grep -q "^${{ matrix.service.name }}-"; then
             TAG=$(git tag --points-at HEAD | grep "^${{ matrix.service.name }}-")
+            echo "INFO: Found git version tag ${TAG}"
             echo "version=${TAG#*-}" >> $GITHUB_OUTPUT
+          else
+            echo "INFO: No git version tag found"
           fi
 
       - if: ${{ steps.check.outputs.version }}
