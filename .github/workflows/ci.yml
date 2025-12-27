@@ -48,8 +48,8 @@ jobs:
             context: .
           - name: transactions
             context: .
-          - name: performance_locust
-            context: ./performance_locust
+          - name: locust
+            context: ./locust
 
     steps:
       - name: Checkout
