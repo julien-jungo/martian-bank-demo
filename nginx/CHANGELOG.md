@@ -2,6 +2,20 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## nginx-1.1.0 - 2025-12-27
+#### Features
+- test releasing - (f910080) - julien-jungo
+
+- - -
+
+## nginx-0.1.0 - 2025-12-27
+#### Features
+- test releasing - (cb2d683) - julien-jungo
+#### Miscellaneous Chores
+- (**version**) 1.23.0 - (6532077) - GitHub Action
+
+- - -
+
 ## nginx-0.1.0 - 2025-12-27
 #### Features
 - test releasing - (cb2d683) - julien-jungo

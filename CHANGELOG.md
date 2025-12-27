@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 1.24.0 - 1970-01-01
+### Package updates
+- nginx bumped to nginx-1.1.0
+### Global changes
+
+- - -
+
 ## 1.23.0 - 2025-12-27
 ### Package updates
 - nginx bumped to nginx-0.1.0
