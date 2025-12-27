@@ -43,6 +43,10 @@ pre_bump_hooks = ["sed -i 's/version = \".*\"/version = \"{{version}}\"/' pyproj
 path = "loan"
 pre_bump_hooks = ["sed -i 's/version = \".*\"/version = \"{{version}}\"/' pyproject.toml"]
 
+[packages.locust]
+path = "performance_locust"
+pre_bump_hooks = ["sed -i 's/version = \".*\"/version = \"{{version}}\"/' pyproject.toml"]
+
 [packages.transactions]
 path = "transactions"
 pre_bump_hooks = ["sed -i 's/version = \".*\"/version = \"{{version}}\"/' pyproject.toml"]
