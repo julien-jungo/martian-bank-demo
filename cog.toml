@@ -25,32 +25,56 @@ authors = []
 
 [packages.accounts]
 path = "accounts"
-pre_bump_hooks = ["sed -i 's/version = \".*\"/version = \"{{version}}\"/' pyproject.toml"]
+pre_bump_hooks = [
+  "sed -i -E 's/version = \".*\"/version = \"{{version}}\"/' pyproject.toml",
+  "sed -i -E 's/image: (.*):.*$/image: \\1:{{version}}/' ../martianbank/templates/accounts.yaml"
+]
 
 [packages.atm-locator]
 path = "atm-locator"
-pre_bump_hooks = ["sed -i 's/\"version\": \".*\"/\"version\": \"{{version}}\"/' package.json"]
+pre_bump_hooks = [
+  "sed -i -E 's/\"version\": \".*\"/\"version\": \"{{version}}\"/' package.json",
+  "sed -i -E 's/image: (.*):.*$/image: \\1:{{version}}/' ../martianbank/templates/atm-locator.yaml"
+]
 
 [packages.customer-auth]
 path = "customer-auth"
-pre_bump_hooks = ["sed -i 's/\"version\": \".*\"/\"version\": \"{{version}}\"/' package.json"]
+pre_bump_hooks = [
+  "sed -i -E 's/\"version\": \".*\"/\"version\": \"{{version}}\"/' package.json",
+  "sed -i -E 's/image: (.*):.*$/image: \\1:{{version}}/' ../martianbank/templates/customer-auth.yaml"
+]
 
 [packages.dashboard]
 path = "dashboard"
-pre_bump_hooks = ["sed -i 's/version = \".*\"/version = \"{{version}}\"/' pyproject.toml"]
+pre_bump_hooks = [
+  "sed -i -E 's/version = \".*\"/version = \"{{version}}\"/' pyproject.toml",
+  "sed -i -E 's/image: (.*):.*$/image: \\1:{{version}}/' ../martianbank/templates/dashboard.yaml"
+]
 
 [packages.loan]
 path = "loan"
-pre_bump_hooks = ["sed -i 's/version = \".*\"/version = \"{{version}}\"/' pyproject.toml"]
+pre_bump_hooks = [
+  "sed -i -E 's/version = \".*\"/version = \"{{version}}\"/' pyproject.toml",
+  "sed -i -E 's/image: (.*):.*$/image: \\1:{{version}}/' ../martianbank/templates/loan.yaml"
+]
 
 [packages.locust]
 path = "locust"
-pre_bump_hooks = ["sed -i 's/version = \".*\"/version = \"{{version}}\"/' pyproject.toml"]
+pre_bump_hooks = [
+  "sed -i -E 's/version = \".*\"/version = \"{{version}}\"/' pyproject.toml",
+  "sed -i -E 's/image: (.*):.*$/image: \\1:{{version}}/' ../martianbank/templates/locust.yaml"
+]
 
 [packages.transactions]
 path = "transactions"
-pre_bump_hooks = ["sed -i 's/version = \".*\"/version = \"{{version}}\"/' pyproject.toml"]
+pre_bump_hooks = [
+  "sed -i -E 's/version = \".*\"/version = \"{{version}}\"/' pyproject.toml",
+  "sed -i -E 's/image: (.*):.*$/image: \\1:{{version}}/' ../martianbank/templates/transactions.yaml"
+]
 
 [packages.ui]
 path = "ui"
-pre_bump_hooks = ["sed -i 's/\"version\": \".*\"/\"version\": \"{{version}}\"/' package.json"]
+pre_bump_hooks = [
+  "sed -i -E 's/\"version\": \".*\"/\"version\": \"{{version}}\"/' package.json",
+  "sed -i -E 's/image: (.*):.*$/image: \\1:{{version}}/' ../martianbank/templates/ui.yaml"
+]
