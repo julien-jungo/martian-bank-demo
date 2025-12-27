@@ -65,6 +65,13 @@ pre_bump_hooks = [
   "sed -i -E 's/image: (.*):.*$/image: \\1:{{version}}/' ../martianbank/templates/locust.yaml"
 ]
 
+[packages.nginx]
+path = "nginx"
+pre_bump_hooks = [
+  "echo \"{{version}}\" > VERSION.txt",
+  "sed -i -E 's/image: (.*):.*$/image: \\1:{{version}}/' ../martianbank/templates/nginx.yaml"
+]
+
 [packages.transactions]
 path = "transactions"
 pre_bump_hooks = [
