@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -22,8 +22,13 @@ jobs:
         with:
           command: bump
           args: --auto
-          git-user: 'GitHub Actions'
+          git-user: 'GitHub Action'
           git-user-email: 'actions@github.com'
+
+      - name: Push
+        run: |
+          git push origin main
+          git push --tags
 
   build:
     needs: release
