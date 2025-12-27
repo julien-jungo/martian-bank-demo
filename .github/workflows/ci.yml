@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    outputs:
+      commit_sha: ${{ steps.set-sha.outputs.sha }}
 
     steps:
       - name: Checkout
@@ -29,6 +31,11 @@ jobs:
         run: |
           git push origin main
           git push --tags
+
+      - name: Set Commit SHA
+        id: set-sha
+        run: |
+          echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
 
   build:
     needs: release
@@ -63,7 +70,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
+          fetch-depth: 1
           fetch-tags: true
+          ref: ${{ needs.release.outputs.commit_sha }}
 
       - name: Check Version
         id: check
