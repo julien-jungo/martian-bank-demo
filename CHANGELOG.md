@@ -2,6 +2,29 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 1.17.0 - 2025-12-27
+### Packages
+- ui locked to ui-1.0.0
+- transactions locked to transactions-1.0.0
+- atm-locator locked to atm-locator-1.0.0
+- dashboard locked to dashboard-1.0.0
+- accounts locked to accounts-1.0.0
+- locust locked to locust-1.0.0
+- loan locked to loan-1.0.0
+- customer-auth locked to customer-auth-1.0.0
+### Global changes
+#### Continuous Integration
+- fix Helm chart bump hook - (b911116) - julien-jungo
+- fix version check step - (dd3efd7) - julien-jungo
+- add locust package to cog.toml - (e6eba2f) - julien-jungo
+- add release job - (c24519a) - julien-jungo
+#### Refactoring
+- rename locust package - (0eec21b) - julien-jungo
+#### Miscellaneous Chores
+- (**version**) locust-1.0.0 - (1e864e4) - julien-jungo
+
+- - -
+
 ## 1.0.0 - 2025-12-27
 ### Package updates
 - loan bumped to loan-1.0.0
