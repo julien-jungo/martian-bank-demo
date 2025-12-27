@@ -2,6 +2,22 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 1.22.0 - 2025-12-27
+### Package updates
+- accounts bumped to accounts-1.5.0
+- atm-locator bumped to atm-locator-1.5.0
+- loan bumped to loan-1.5.0
+- transactions bumped to transactions-1.5.0
+- ui bumped to ui-1.5.0
+- dashboard bumped to dashboard-1.5.0
+- locust bumped to locust-1.5.0
+- customer-auth bumped to customer-auth-1.5.0
+### Global changes
+#### Continuous Integration
+- set fetch depth to 0 - (0f71368) - julien-jungo
+
+- - -
+
 ## 1.21.0 - 2025-12-27
 ### Package updates
 - ui bumped to ui-1.4.0
