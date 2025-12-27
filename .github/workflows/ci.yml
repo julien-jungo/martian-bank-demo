@@ -58,8 +58,10 @@ jobs:
       - name: Check Version
         id: check
         run: |
-          TAG=$(git tag --points-at HEAD | grep "^${{ matrix.service.name }}-")
-          [ -n "$TAG" ] && echo "version=${TAG#*-}" >> $GITHUB_OUTPUT
+          if git tag --points-at HEAD | grep -q "^${{ matrix.service.name }}-"; then
+            TAG=$(git tag --points-at HEAD | grep "^${{ matrix.service.name }}-")
+            echo "version=${TAG#*-}" >> $GITHUB_OUTPUT
+          fi
 
       - if: ${{ steps.check.outputs.version }}
         name: Log in to Registry
