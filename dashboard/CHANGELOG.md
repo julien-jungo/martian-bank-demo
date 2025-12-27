@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## dashboard-1.1.0 - 2025-12-27
+#### Features
+- test releasing - (18052ad) - julien-jungo
+- test releasing - (a8d04b6) - julien-jungo
+
+- - -
+
 ## dashboard-1.0.0 - 2025-12-27
 #### Continuous Integration
 - add pyproject.toml files - (33cfd21) - julien-jungo

@@ -1,6 +1,6 @@
 {
   "name": "atm-locator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "description": "atm-locator microservice",
   "main": "server.js",

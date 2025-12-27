@@ -2,6 +2,24 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 1.18.0 - 2025-12-27
+### Package updates
+- atm-locator bumped to atm-locator-1.1.0
+- dashboard bumped to dashboard-1.1.0
+- ui bumped to ui-1.1.0
+- accounts bumped to accounts-1.1.0
+- locust bumped to locust-1.1.0
+- transactions bumped to transactions-1.1.0
+- customer-auth bumped to customer-auth-1.1.0
+- loan bumped to loan-1.1.0
+### Global changes
+#### Continuous Integration
+- push commit after release - (721f252) - julien-jungo
+- add write permissions to release job - (db64152) - julien-jungo
+- only check from latest tag - (bdd6045) - julien-jungo
+
+- - -
+
 ## 1.17.0 - 2025-12-27
 ### Packages
 - ui locked to ui-1.0.0

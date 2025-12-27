@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## locust-1.1.0 - 2025-12-27
+#### Features
+- test releasing - (18052ad) - julien-jungo
+- test releasing - (a8d04b6) - julien-jungo
+#### Refactoring
+- rename locust package - (0eec21b) - julien-jungo
+
+- - -
+
 ## locust-1.0.0 - 2025-12-27
 #### Continuous Integration
 - add locust package to cog.toml - (e6eba2f) - julien-jungo
