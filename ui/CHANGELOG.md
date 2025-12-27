@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## ui-1.4.0 - 2025-12-27
+#### Features
+- test releasing - (7b14d14) - julien-jungo
+
+- - -
+
 ## ui-1.3.0 - 2025-12-27
 #### Features
 - test releasing - (4d1ab7f) - julien-jungo
