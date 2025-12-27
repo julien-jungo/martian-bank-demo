@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: ui
-          image: ghcr.io/julien-jungo/martian-bank-demo-ui
+          image: ghcr.io/julien-jungo/martian-bank-demo-ui:1.5.0
           env:
             {{- if .Values.nginx.enabled }}
             - name: VITE_USERS_URL

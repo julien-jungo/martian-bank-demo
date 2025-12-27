@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: atm-locator
-          image: ghcr.io/julien-jungo/martian-bank-demo-atm-locator
+          image: ghcr.io/julien-jungo/martian-bank-demo-atm-locator:1.5.0
           env:
             {{- if not .Values.mongodb.enabled }}
             - name: DATABASE_HOST

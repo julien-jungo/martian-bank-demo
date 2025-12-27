@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: locust
-          image: ghcr.io/julien-jungo/martian-bank-demo-locust
+          image: ghcr.io/julien-jungo/martian-bank-demo-locust:1.5.0
           env:
             - name: VITE_USERS_URL
               value: http://customer-auth:8000/api/users

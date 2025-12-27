@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: ghcr.io/julien-jungo/martian-bank-demo-nginx
+          image: ghcr.io/julien-jungo/martian-bank-demo-nginx:latest
 ---
 apiVersion: v1
 kind: Service

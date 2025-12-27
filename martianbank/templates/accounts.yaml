@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: accounts
-          image: ghcr.io/julien-jungo/martian-bank-demo-accounts
+          image: ghcr.io/julien-jungo/martian-bank-demo-accounts:1.5.0
           envFrom:
             - configMapRef:
                 name: configmap-martianbank

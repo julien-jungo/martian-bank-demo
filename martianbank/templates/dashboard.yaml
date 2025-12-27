@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: dashboard
-          image: ghcr.io/julien-jungo/martian-bank-demo-dashboard
+          image: ghcr.io/julien-jungo/martian-bank-demo-dashboard:1.5.0
           env:
             - name: SERVICE_PROTOCOL
               value: {{.Values.SERVICE_PROTOCOL}}
